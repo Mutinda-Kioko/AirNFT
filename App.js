@@ -1,20 +1,22 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, SafeAreaView } from 'react-native';
+import { Entypo } from "@expo/vector-icons";
+import HomeScreen from './src/screens/Home';
+import Post from './src/components/Post';
+import feed from './assets/data/feed';
 
+const feed1 = feed[0];
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <>
+    <StatusBar style="auto" />
+    <SafeAreaView>
+    {/* <HomeScreen/> */} 
+      <Post 
+      post={post1}
+      />
+    </SafeAreaView>
+    </>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
