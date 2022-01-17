@@ -3,7 +3,7 @@ import { StyleSheet, Text, SafeAreaView } from 'react-native';
 import { Entypo } from "@expo/vector-icons";
 import HomeScreen from './src/screens/Home';
 import SearchResultScreen from './src/screens/SearchResult';
-
+import  DestinationSearchScreen from './src/screens/SearchResult'
 import Post from './src/components/Post';
 import feed from './assets/data/feed';
 
@@ -18,7 +18,7 @@ export default function App() {
       post={post1}
       />
       */} 
-      <SearchResultScreen />
+      < DestinationSearchScreen />
     </SafeAreaView>
     </>
   );
