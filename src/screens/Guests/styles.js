@@ -38,8 +38,7 @@ const styles = StyleSheet.create({
         fontSize:20,
         color: '#474747',
     },
-    bottomView: {},
-    serchButtonBottom: {
+    searchButtonBottom: {
         marginBottom: 20,
         backgroundColor: '#f15454',
         alignItems:'center',
