@@ -1,6 +1,5 @@
 import React from 'react'
 import { View, FlatList } from 'react-native'
-import style from './styles.js'
 import feed from '../../../assets/data/feed'
 import Post from '../../components/Post'
 

@@ -11,10 +11,10 @@ const GuestsScreen = () => {
    
     return (
         <View style={styles.mainContainer}>
-            <View style={styles.topView}>
+            <View>
             {/* Titles */}
             <View style={styles.row}>
-                <View style={styles.adult}>
+                <View>
                     <Text style={styles.title}>Adults</Text>
                     <Text style={styles.titleText}>Ages 13 and above</Text>
                 </View>
@@ -33,7 +33,7 @@ const GuestsScreen = () => {
                 </View>
             </View>
             <View style={styles.row}>
-                <View style={styles.adult}>
+                <View>
                     <Text style={styles.title}>Children</Text>
                     <Text style={styles.titleText}>Ages 2 to 12</Text>
                 </View>
@@ -52,7 +52,7 @@ const GuestsScreen = () => {
                 </View>
             </View>
             <View style={styles.row}>
-                <View style={styles.adult}>
+                <View>
                     <Text style={styles.title}>Infants</Text>
                     <Text style={styles.titleText}>NewBorns to  1 year</Text>
                 </View>

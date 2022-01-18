@@ -9,7 +9,6 @@ const styles = StyleSheet.create({
         borderBottomWidth: 1,
         borderColor: 'lightgrey',
     },
-    adult: {},
     title: {
         fontWeight:'bold',
 
@@ -38,8 +37,6 @@ const styles = StyleSheet.create({
     textButton: {
         fontSize:20,
         color: '#474747',
-    },
-    topView: {
     },
     bottomView: {},
     serchButtonBottom: {
