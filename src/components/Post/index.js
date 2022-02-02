@@ -9,7 +9,7 @@ const Post = (props) => {
            {/* Image */}
            <Image
            style={styles.image}
-           source={{_uri: _post.image}}
+           source={{uri: _post.image}}
            />
            {/* Bed and Bedroom */}
            <Text style={styles.bedroom}>{_post.bed} bed {_post.bedroom} Bedroom</Text>

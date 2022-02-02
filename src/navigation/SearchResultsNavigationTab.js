@@ -1,11 +1,19 @@
-import { View, Text } from 'react-native';
 import React from 'react';
+import SearchResultScreen from '../screens/SearchResult';
+import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs'
 
 const SearchResultsNavigationTab = () => {
+    const Tab = createMaterialTopTabNavigator();
   return (
-    <View>
-      <Text></Text>
-    </View>
+    <Tab.Navigator screenOptions={{
+        tabBarActiveTintColor: '#f15454',
+        tabBarIndicatorStyle:{
+            backgroundColor:"#f15454",
+        }
+    }}>
+      <Tab.Screen name={"List"} component={SearchResultScreen}/>
+      <Tab.Screen name={"Map"} component={SearchResultScreen}/>
+    </Tab.Navigator>
   );
 };
 
