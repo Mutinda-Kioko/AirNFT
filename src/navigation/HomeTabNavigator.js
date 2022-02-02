@@ -7,6 +7,7 @@ import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
 import Feather from '@expo/vector-icons/Feather';
 import EvilIcons from '@expo/vector-icons/EvilIcons';
 import { Ionicons } from '@expo/vector-icons'; 
+import ExploreNavigator from './ExploreNavigator'
 
 const Tab = createBottomTabNavigator();
 
@@ -17,7 +18,7 @@ const HomeTabNavigator = () => {
         }}>
            <Tab.Screen
            name={"Explore"}
-            component={HomeScreen}
+            component={ExploreNavigator}
             options={{
                 tabBarIcon: ({color}) => (
                     <Fontisto name="search" size={25} color={color} />

@@ -17,7 +17,7 @@ const Router = (props) =>{
             />
             
             <Stack.Screen
-            name={'SearcgResult'}
+            name={'SearchResults'}
             component={SearchResultScreen}
             options={{
                 title="Search your destination"
