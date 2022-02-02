@@ -1,10 +1,10 @@
 import React, {useState} from 'react'
-import { View, TextInput, FlatList, Text } from 'react-native'
+import { View, TextInput, FlatList, Text, processColor } from 'react-native'
 import styles from "./styles.js";
 import { useNavigation } from "@react-navigation/native";
 import {GooglePlacesAutocomplete} from 'react-native-google-places-autocomplete'
 import SuggestionRow from './SuggestionRow';
-
+import 'dotenv';
 
 const DestinationSearchScreen = () => {
     const navigation = useNavigation()
@@ -23,7 +23,7 @@ const DestinationSearchScreen = () => {
 
         }}
          query={{
-             key: 'AIzaSyBXDV_8PblqDGcnd0fRrj8FTW-WlUY2nbw',
+             key:process.env.API_KEY,
              language: 'en',
              types: '(cities)',
         }}
