@@ -1,4 +1,4 @@
-import { View, Text } from 'react-native';
+import { View, FlatList } from 'react-native';
 import React, {useState} from 'react';
 import MapView from 'react-native-maps';
 import { Marker, PROVIDER_GOOGLE } from 'react-native-maps';
@@ -32,7 +32,12 @@ const [selectedPlaceId, setSelectedPlaceId] = useState(null);
 
   </MapView>
   <View style={{position:'absolute', bottom: 50}}>
-    <PostCarouselItem post={places[0]}/>
+    <FlatList
+    data={places}
+    horizontal
+    renderItem={({item}) => <PostCarouselItem post={item}/> }
+    showsHorizontalScrollIndicator={false}
+    />
   </View>
     </View>
   );
