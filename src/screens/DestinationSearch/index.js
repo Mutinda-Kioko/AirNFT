@@ -1,8 +1,8 @@
-import React, {useState} from 'react'
-import { View, TextInput, FlatList, Text, processColor } from 'react-native'
+import React, {useState} from 'react';
+import { View, TextInput, FlatList, Text, processColor } from 'react-native';
 import styles from "./styles.js";
 import { useNavigation } from "@react-navigation/native";
-import {GooglePlacesAutocomplete} from 'react-native-google-places-autocomplete'
+import {GooglePlacesAutocomplete} from 'react-native-google-places-autocomplete';
 import SuggestionRow from './SuggestionRow';
 import 'dotenv';
 
